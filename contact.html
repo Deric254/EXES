@@ -5,22 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact – EXES</title>
   <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+    @keyframes slide {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .animate-slide {
+      animation: slide 20s linear infinite;
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-800 min-h-screen flex flex-col"> <!-- ✅ Flex wrapper -->
 
-  <!-- Navbar -->
-  <nav class="bg-[#49A078] text-white p-4 flex justify-between items-center shadow-md">
-    <div class="flex items-center gap-2">
+  <!-- ✅ Navbar with Inline Scrolling Slogan -->
+  <nav class="bg-[#49A078] text-white px-4 py-4 flex items-center shadow-md">
+    <!-- Logo -->
+    <div class="flex items-center gap-2 shrink-0">
       <img src="assets/img/logo.png" alt="EXES Logo" class="h-16 w-16 rounded-xl object-cover shadow" />
       <span class="font-bold text-2xl">EXES</span>
     </div>
-    <ul class="flex gap-6 text-sm">
+
+    <!-- 🔁 Scrolling Slogan (Inline, Responsive) -->
+    <div class="overflow-hidden relative flex-grow h-6 mx-6 hidden md:block">
+      <div class="absolute whitespace-nowrap animate-slide text-sm font-medium text-white">
+         • We Analyze, You Decide • We Analyze, You Decide • We Analyze, You Decide •
+      </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="flex gap-6 text-sm shrink-0">
       <li><a href="index.html" class="hover:underline">Home</a></li>
       <li><a href="services.html" class="hover:underline">Services</a></li>
       <li><a href="my-journey.html" class="hover:underline">My Journey</a></li>
       <li><a href="contact.html" class="hover:underline">Contact</a></li>
     </ul>
   </nav>
+
 
   <!-- Contact Section -->
   <section class="max-w-4xl mx-auto py-16 px-4 flex-1"> <!-- ✅ Added flex-1 here -->
