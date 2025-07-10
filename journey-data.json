@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Cleaning Sales Data for Retail Client",
+    "date": "2024-11-02",
+    "description": "The client had over 10,000 sales records with missing fields, mixed data types, and duplicate rows. I cleaned and normalized the data using Python and Excel.",
+    "tools": "Excel, Python (pandas), Power BI",
+    "files": [
+      { "name": "Raw Data (before cleaning)", "link": "https://drive.google.com/file/d/xyz123/view" },
+      { "name": "Cleaned Dataset (.xlsx)", "link": "https://drive.google.com/file/d/abc456/view" }
+    ],
+    "github": "https://github.com/Deric254/sales-cleaning-project"
+  },
+  {
+    "title": "Forex Journal Dashboard",
+    "date": "2025-03-12",
+    "description": "This project focused on analyzing and visualizing XAUUSD swing trades using supply/demand, CHoCH, and entry rules on 4H and 1H charts. Final product was a dynamic Power BI dashboard and Python-generated performance stats.",
+    "tools": "Power BI, MySQL, Python",
+    "files": [
+      { "name": "Trading Journal Template (.xlsx)", "link": "https://drive.google.com/file/d/x123example/view" },
+      { "name": "Screenshot of Dashboard", "link": "https://drive.google.com/file/d/y456example/view" }
+    ],
+    "github": "https://github.com/Deric254/xauusd-journal"
+  },
+  {
+    "title": "MySQL to Power BI Integration",
+    "date": "2025-04-20",
+    "description": "Connected a MySQL database to Power BI and Excel for real-time analytics. This helped the client understand student performance trends by school and term.",
+    "tools": "MySQL, Power BI, Excel",
+    "files": [
+      { "name": "SQL Script", "link": "https://gist.github.com/Deric254/sql-script" },
+      { "name": "Power BI Report", "link": "https://drive.google.com/file/d/example-report/view" }
+    ],
+    "github": "https://github.com/Deric254/mysql-powerbi-integration"
+  }
+]

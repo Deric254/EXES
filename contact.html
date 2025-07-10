@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact</title>
+  <title>Contact – EXES</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800 min-h-screen flex flex-col"> <!-- ✅ Flex wrapper -->
 
   <!-- Navbar -->
   <nav class="bg-[#49A078] text-white p-4 flex justify-between items-center shadow-md">
     <div class="flex items-center gap-2">
-      <img src="assets/img/logo.png" alt="EXES Logo" class="h-10 w-auto" />
-      <span class="font-bold text-xl">EXES</span>
+      <img src="assets/img/logo.png" alt="EXES Logo" class="h-16 w-16 rounded-xl object-cover shadow" />
+      <span class="font-bold text-2xl">EXES</span>
     </div>
     <ul class="flex gap-6 text-sm">
       <li><a href="index.html" class="hover:underline">Home</a></li>
@@ -22,16 +22,32 @@
     </ul>
   </nav>
 
-  <!-- Contact -->
-  <section class="max-w-4xl mx-auto py-16 px-4">
-    <h1 class="text-3xl font-bold mb-4 text-[#2D3142]">Get In Touch</h1>
-    <p class="mb-4 text-lg text-gray-700">For questions, quotes, or follow-ups, contact me:</p>
-    <ul class="text-gray-800 text-lg">
-      <li>Email: <a href="mailto:dericmarangu@gmail.com" class="text-blue-600 hover:underline">dericmarangu@gmail.com</a></li>
-      <li>WhatsApp: +254 7XX XXX XXX (replace with your number if you wish)</li>
-      <li>Project Submission: <a href="https://forms.gle/hqQZdcpHF4Vnjxou8" target="_blank" rel="noopener" class="text-green-600 hover:underline">Use This Form</a></li>
-    </ul>
+  <!-- Contact Section -->
+  <section class="max-w-4xl mx-auto py-16 px-4 flex-1"> <!-- ✅ Added flex-1 here -->
+    <h1 class="text-3xl font-bold mb-6 text-center text-[#2D3142]">📞 Contact & Project Intake</h1>
+    <p class="text-center text-gray-600 mb-6">
+      Reach out to get your data analyzed. You can contact me directly via email or fill out the Google Form below.
+    </p>
+
+    <div class="text-center mb-6">
+      <p class="text-lg">📧 <a href="mailto:dericmarangu@gmail.com" class="text-blue-600 underline">dericmarangu@gmail.com</a></p>
+    </div>
+
+    <!-- External Link to Google Form -->
+    <div class="text-center mt-8">
+      <a href="https://forms.gle/hqQZdcpHF4Vnjxou8" 
+         target="_blank" 
+         rel="noopener"
+         class="inline-block bg-[#49A078] text-white px-6 py-3 rounded-lg shadow hover:bg-[#3e8865] transition">
+        📤 Submit Your Project Brief (Google Form)
+      </a>
+    </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 text-center text-sm text-gray-500">
+    &copy; 2025 EXES – Built by Deric. All rights reserved.
+  </footer>
 
 </body>
 </html>
